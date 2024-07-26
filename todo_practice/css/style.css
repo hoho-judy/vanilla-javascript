@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    color: #eee;
+    background: linear-gradient(5deg, #de6161, #2657eb);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.input-box > label {
+    display: none;
+}
+
+.input-box > input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.todo-list > li {
+    border-bottom: 1px solid #eee;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.todo-like {
+    flex: 1;
+}
+
+.todo-item {
+    flex: 8;
+}
+
+.todo-manage {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.like {
+    cursor: pointer;
+    font-size: 18px !important;
+    color: salmon;
+}
+
+.check {
+    cursor: pointer;
+    color: #38ef7d;
+}
+
+.check-hide {
+    display: none;
+}
+
+.clear {
+    cursor: pointer;
+    color: salmon;
+}
+
+.done {
+    color: lightgrey;
+    text-decoration: line-through;
+}
+
+.all-del-btn {
+    cursor: pointer;
+    padding: 0.25rem !important;
+    
+}

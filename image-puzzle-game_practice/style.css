@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-time {
+    margin-top: 3rem;
+    font-size: 52px;
+}
+
+.container {
+    margin-top: 2rem;
+}
+
+.start-game {
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    background: salmon;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid salmon;
+}
+
+li {
+    background: url("img/487-400x400.jpg");
+}
+
+.list0 {
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+
+.list1 {
+    background-position-x: -100px;
+    background-position-y: 0px;
+}
+
+.list2 {
+    background-position-x: -200px;
+    background-position-y: 0px;
+}
+
+.list3 {
+    background-position-x: -300px;
+    background-position-y: 0px;
+}
+
+.list4 {
+    background-position-x: 0px;
+    background-position-y: -100px;
+}
+
+.list5 {
+    background-position-x: -100px;
+    background-position-y: -100px;
+}
+
+.list6 {
+    background-position-x: -200px;
+    background-position-y: -100px;
+}
+
+.list7 {
+    background-position-x: -300px;
+    background-position-y: -100px;
+}
+
+.list8 {
+    background-position-x: 0px;
+    background-position-y: -200px;
+}
+
+.list9 {
+    background-position-x: -100px;
+    background-position-y: -200px;
+}
+
+.list10 {
+    background-position-x: -200px;
+    background-position-y: -200px;
+}
+
+.list11 {
+    background-position-x: -300px;
+    background-position-y: -200px;
+}
+
+.list12 {
+    background-position-x: 0px;
+    background-position-y: -300px;
+}
+
+.list13 {
+    background-position-x: -100px;
+    background-position-y: -300px;
+}
+
+.list14 {
+    background-position-x: -200px;
+    background-position-y: -300px;
+}
+
+.list15 {
+    background-position-x: -300px;
+    background-position-y: -300px;
+}
+
+.game-text {
+    position: absolute;
+    font-size: 45px;
+    color: red;
+    display: none;
+}

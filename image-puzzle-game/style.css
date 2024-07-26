@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --facebook: #2b5998
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-time {
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: var(--facebook);
+}
+
+ul {
+    list-style: none;
+    margin-top: 1rem;
+    border: 2px solid var(--facebook);
+    display: grid; /* 그리드 형태로 보여주기 */
+    grid-template-columns: repeat(4, 1fr); /* 옆으로 나열, 1fr이 네번 반복 */
+}
+
+li {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    color: #fff;
+    background: url("img/740-400x400.jpg");
+}
+
+.start-button {
+    background: var(--facebook);
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+}
+
+.list0 {
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+
+.list1 {
+    background-position-x: -100px;
+    background-position-y: 0px;
+}
+
+.list2 {
+    background-position-x: -200px;
+    background-position-y: 0px;
+}
+
+.list3 {
+    background-position-x: -300px;
+    background-position-y: 0px;
+}
+
+.list4 {
+    background-position-x: 0px;
+    background-position-y: -100px;
+}
+
+.list5 {
+    background-position-x: -100px;
+    background-position-y: -100px;
+}
+
+.list6 {
+    background-position-x: -200px;
+    background-position-y: -100px;
+}
+
+.list7 {
+    background-position-x: -300px;
+    background-position-y: -100px;
+}
+
+.list8 {
+    background-position-x: 0px;
+    background-position-y: -200px;
+}
+
+.list9 {
+    background-position-x: -100px;
+    background-position-y: -200px;
+}
+
+.list10 {
+    background-position-x: -200px;
+    background-position-y: -200px;
+}
+
+.list11 {
+    background-position-x: -300px;
+    background-position-y: -200px;
+}
+
+.list12 {
+    background-position-x: 0px;
+    background-position-y: -300px;
+}
+
+.list13 {
+    background-position-x: -100px;
+    background-position-y: -300px;
+}
+
+.list14 {
+    background-position-x: -200px;
+    background-position-y: -300px;
+}
+
+.list15 {
+    background-position-x: -300px;
+    background-position-y: -300px;
+}
+
+.game-text {
+    position: absolute;
+    font-size: 45px;
+    color: red;
+    display: none;
+}

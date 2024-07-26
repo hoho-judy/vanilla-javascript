@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: salmon
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+}
+
+.header {
+    background: var(--primary);
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.header h1 {
+    font-size: 18px;
+}
+
+.header select {
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 2rem);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.city {
+    font-size: 18px;
+    color: var(--primary);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.temperature-data {
+    font-size: 24px;
+    margin-right: 0.3rem;
+}
+
+.temperature span {
+    font-size: 56px;
+}
+
+.weather-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-icon img{
+    max-width: 60px;
+}
+
+.details {
+    margin-top: 1rem;
+    font-size: 12px;
+    display: flex;
+}
+
+.details span {
+    background: var(--primary);
+    color: #fff;
+    margin-right: 5px;
+    padding: 0.1rem 0.2rem;
+    border-radius: 5px;
+}
+
+#spinner {
+    display: none;
+}

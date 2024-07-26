@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(300px, auto);
+        }
+        .wrapper > .item {
+            background: #efefef;
+            padding: 10px;
+        }
+        .wrapper > div:nth-child(odd) {
+            background: #ddd;
+        }
+        .item1 {
+            grid-column: 1/4;
+        }
+        .item4 {
+            grid-row: 2/5;
+            grid-column: 3/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item item1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, natus?
+        </div>
+        <div class="item item2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, in!
+        </div>
+        <div class="item item3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, facere.
+        </div>
+        <div class="item item4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, amet.
+        </div>
+        <div class="item item5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, doloremque?
+        </div>
+        <div class="item item6">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, accusantium.
+        </div>
+        <div class="item item7">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, optio!
+        </div>
+        <div class="item item8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quis!
+        </div>
+    </div>
+</body>
+</html>

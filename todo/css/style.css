@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* 세로로 나열되게 */
+}
+
+.header {
+    color : #fff;
+    background: linear-gradient(5deg, #43C6AC, #191654); /* 색깔 그라데이션 주는 옵션 */
+    display: flex;
+    justify-content: space-between; /* display 속성이 flex일때만 사용 가능 */
+    padding: 1rem; /* 16px을 비율로 지정하는 방법 - rem */
+    align-items: center; /* display 속성이 flex일때만 사용 가능 */
+}
+
+.input-box > label {
+    display: none;
+}
+
+.input-box > input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+}
+
+.todo-list > li {
+    border-bottom: 1px solid #eee; /* 밑줄주기 */
+    padding : 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.todo-like {
+    flex: 1; /* 상위 태그 display를 flex로 줬기 때문에 하위 태그들의 영역을 1:8:1 이런식으로 지정 가능 */
+}
+
+.todo-item {
+    flex: 8;
+}
+
+.done .check {
+    visibility: hidden;
+}
+
+.done .todo-item {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.todo-manager {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.like {
+    cursor : pointer;
+    font-size : 18px !important;
+    color : salmon;
+}
+
+.check {
+    color : #38ef7d;
+}
+
+.clear {
+    color : salmon;
+}

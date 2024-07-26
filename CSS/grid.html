@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 5fr); /* 1:1:1:1 비율로 정렬하겠다*/
+            grid-gap: 10px;
+            grid-auto-rows: minmax(300px, auto);
+        }
+        .wrapper > div {
+            background: #efefef;
+            padding: 16px;
+        }
+        .wrapper > div:nth-child(odd) {
+            background: #ddd;
+        }
+        .item1 {
+            grid-column: 1/4; /* 1부터 4까지 벌어져서 자리차지하도록*/
+        }
+        .item4 {
+            grid-column: 3/4;
+            grid-row: 2/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item item1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio excepturi ut provident ratione praesentium blanditiis commodi? Debitis sunt quod enim.
+        </div>
+        <div class="item item2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ipsum harum ab rem a placeat reprehenderit eius qui dicta excepturi.
+        </div>
+        <div class="item item3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam aperiam illo quo eius. Non ducimus optio excepturi animi corporis!
+        </div>
+        <div class="item item4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet qui repellendus aut fugit itaque veniam nisi porro delectus adipisci ipsam.
+        </div>
+        <div class="item item5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio excepturi ut provident ratione praesentium blanditiis commodi? Debitis sunt quod enim.
+        </div>
+        <div class="item item6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ipsum harum ab rem a placeat reprehenderit eius qui dicta excepturi.
+        </div>
+        <div class="item item7">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam aperiam illo quo eius. Non ducimus optio excepturi animi corporis!
+        </div>
+        <div class="item item8">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet qui repellendus aut fugit itaque veniam nisi porro delectus adipisci ipsam.
+        </div>
+    </div>
+</body>
+</html>

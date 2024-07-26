@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white:#fff;
+    --btn-back:
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(50deg, #8360c3, #2ebf91);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.words-display {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 3rem;
+    color: #8360c3;
+    font-weight: 700;
+}
+
+.words-input-box {
+    margin-top: 2rem;
+}
+
+.words-input {
+    padding: 0.5rem;
+    width: 300px;
+}
+
+.game-info {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.time, .score {
+    font-size: 30px;
+}
+
+.level-button-group {
+    margin-top: 2rem;
+}
+
+.level-button-group > button {
+    padding: 0.5rem;
+}
+
+.low-level {
+    color: var(--white);
+    background: #59C173;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mid-level {
+    color: var(--white);
+    background: #a17fe0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.high-level {
+    color: var(--white);
+    background:#5D26C1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-game-button {
+    border: none;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    width: 255px;
+    background: linear-gradient(50deg, #8360c3, #2ebf91);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.loading {
+    border: 1px solid black;
+    cursor: not-allowed;
+    background: #eee;
+    color: black;
+}

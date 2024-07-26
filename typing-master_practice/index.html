@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이핑 마스터!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>타이핑마스터!</h1>
+    </header>
+    <section class="section">
+        <div class="words-display">
+            Welcome!
+        </div>
+        <div class="words-input-box">
+            <input type="text" id="input-words" class="words-input">
+        </div>
+        <div class="game-info">
+            <div>
+                남은시간 : <span class="time">0</span> 초
+            </div>
+            <div>
+                획득점수 : <span class="score">0</span> 점
+            </div>
+        </div>
+    </section>
+    <div class="level-button-group">
+        <button class="low-level loading" id="lowBtn" onClick="run(this.id)">난이도 [하]</button>
+        <button class="mid-level loading" id="midBtn" onClick="run(this.id)">난이도 [중]</button>
+        <button class="high-level loading" id="highBtn" onClick="run(this.id)">난이도 [상]</button>
+    </div>
+    <!-- <button class="start-game-button loading" onclick="run()">게임을 준비하는중...</button> -->
+    <script src="app.js"></script>
+</body>
+
+</html>

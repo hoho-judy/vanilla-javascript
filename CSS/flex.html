@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container-1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .container-1 > div {
+            border: 1px solid #ddd;
+            max-width: 200px;
+        }
+        .box-1 {
+            flex: 1;
+            order: 2;
+        }
+        .box-2 {
+            flex: 2;
+            order: 3;
+        }
+        .box-3 {
+            flex: 1;
+            order:1;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h3>Box1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, provident.</p>
+        </div>
+        <div class="box-2">
+            <h3>Box2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci molestias ullam facere amet minima, ipsam eos consequuntur fugiat libero, impedit animi, nam accusantium facilis rem obcaecati numquam eum dolores necessitatibus recusandae voluptates quasi distinctio? Quibusdam quo consequuntur illo sunt voluptatum quae, ipsam natus atque animi sit mollitia impedit, non est.</p>
+        </div>
+        <div class="box-3">
+            <h3>Box3</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, minus?</p>
+        </div>
+    </div>
+</body>
+</html>

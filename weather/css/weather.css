@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 자주쓰는 속성값 변수 선언, 익스플로러는 제공하지 않는 기능 */
+:root {
+    --primary: #3955bb
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    overflow: hidden; /* 넘치는 부분은 안보이게 숨기는 옵션  */
+}
+
+.header {
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.header h1 {
+    font-size: 18px;
+}
+
+select {
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column; /* 세로로 나열, 이걸 주면 아래 두 속성 역할이 조금 바뀜  */
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 2rem); /* 100% 전체 영역에서 헤더 높이만큼 뺀 만큼을 세로길이로 주면 위의 속성들로 정중앙 배치 가능  */
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location {
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.temperature {
+    font-size: 24px;
+}
+
+.temperature > span {
+    font-size: 56px;
+    margin-right: 0.3rem;
+}
+
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather img {
+    max-width: 70px;
+}
+
+.details {
+    margin-top: 1rem;
+    font-size: 11px;
+    display: flex;
+}
+
+.details > span {
+    background: var(--primary);
+    color: #fff;
+    margin-right: 5px;
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
+}
+
+#spinner {
+    display: none;
+}
